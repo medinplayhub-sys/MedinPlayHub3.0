@@ -31,11 +31,12 @@ android {
       keyAlias = "upload"
       keyPassword = System.getenv("KEY_PASSWORD")
     }
-    create("debugConfig") {
-      storeFile = file("${rootDir}/debug.keystore")
-      storePassword = "android"
+    create("debug") {
+      // Usa el keystore de depuración por defecto de Android
+      // No especificar storeFile permite que Gradle use el debug keystore interno
+      storePassword = ""
       keyAlias = "androiddebugkey"
-      keyPassword = "android"
+      keyPassword = ""
     }
   }
 
@@ -46,7 +47,7 @@ android {
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
       signingConfig = signingConfigs.getByName("release")
     }
-    debug { signingConfig = signingConfigs.getByName("debugConfig") }
+    debug { signingConfig = signingConfigs.getByName("debug") }
   }
   compileOptions {
     sourceCompatibility = JavaVersion.VERSION_11
