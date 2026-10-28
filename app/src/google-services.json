@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "597240200496",
+    "project_id": "medinplayhub-database",
+    "storage_bucket": "medinplayhub-database.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597240200496:android:4a1ff49a32fa5e26a21cf5",
+        "android_client_info": {
+          "package_name": "com.aistudio.medinplayhub.qywrxs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd-coOEzhZThkDnc2_uK2ApJO2gx3pn9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

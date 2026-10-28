@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Subtle elegant circular frame -->
+    <path
+        android:pathData="M54,54 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"
+        android:strokeWidth="1.5"
+        android:strokeColor="#25FFE0B2" />
+
+    <!-- Subtle glow behind the M -->
+    <path
+        android:pathData="M32,70 L32,38 L54,58 L76,38 L76,70"
+        android:strokeColor="#25C67C65"
+        android:strokeWidth="18"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- The actual "M" with a gorgeous elegant gradient -->
+    <path
+        android:pathData="M32,70 L32,38 L54,58 L76,38 L76,70"
+        android:strokeWidth="10"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="32"
+                android:startY="38"
+                android:endX="76"
+                android:endY="70"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFE0B2"/> <!-- Elegant Light Gold -->
+                <item android:offset="0.5" android:color="#E5A93B"/> <!-- Rich Amber Gold -->
+                <item android:offset="1.0" android:color="#C67C65"/> <!-- Sophisticated Copper -->
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Glowing play accent centered inside the M's lower frame -->
+    <path
+        android:pathData="M50,65 L50,75 L59,70 Z"
+        android:fillColor="#E5A93B" />
+</vector>

@@ -1,0 +1,6 @@
+{
+  "name": "MedinPlay Hub",
+  "description": "Aplicación de Radio, IPTV y Películas con perfiles personalizados y panel de administración.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

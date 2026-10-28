@@ -1,0 +1,14 @@
+{
+  "name": "medinplay-functions",
+  "version": "1.0.0",
+  "description": "Firebase Cloud Functions for MedinPlay Admin OTP & Email Service",
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "nodemailer": "^6.9.3"
+  },
+  "engines": {
+    "node": "18"
+  }
+}
